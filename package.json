@@ -1,8 +1,7 @@
 {
-  "name": "evento-innova",
+  "name": "evento-innova-web",
   "private": true,
   "version": "1.0.0",
-  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
