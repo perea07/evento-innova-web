@@ -16,7 +16,7 @@ export default function App(){
       <main className="flex-1 py-8 px-4 md:px-8 lg:px-16">
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }}>
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/evento-innova-web/" element={<Home/>} />
             <Route path="/agenda" element={<Agenda/>} />
             <Route path="/ponentes" element={<Ponentes/>} />
             <Route path="/registro" element={<Register/>} />

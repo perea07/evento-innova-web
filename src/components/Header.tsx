@@ -6,7 +6,7 @@ export default function Header(){
   return (
     <header className="bg-gradient-to-r from-azul-nocturno to-black/80 text-white sticky top-0 z-30 shadow-lg">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4 md:p-6">
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/evento-innova-web/" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-cian-electrico flex items-center justify-center text-azul-nocturno font-bold">IN</div>
           <div>
             <div className="font-bold">Innova U</div>

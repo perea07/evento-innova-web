@@ -9,7 +9,7 @@ export default function Register(){
     e.preventDefault()
     setStatus('loading')
     try {
-      const res = await fetch('https://evento-innova-api.onrender.com/register', {
+      const res = await fetch('https://evento-innova-api-lsh2.onrender.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)

@@ -6,7 +6,7 @@ export default function Ponentes() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://evento-innova-api.onrender.com/speakers")
+    fetch("https://evento-innova-api-lsh2.onrender.com/speakers")
       .then(res => res.json())
       .then(data => {
         setSpeakers(data);
