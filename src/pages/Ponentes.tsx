@@ -21,7 +21,6 @@ export default function Ponentes() {
   if (loading) {
     return <p className="text-center text-white">Cargando ponentes...</p>;
   }
-
   return (
     <section className="max-w-6xl mx-auto">
       <h2 className="text-2xl font-bold mb-6">Ponentes</h2>
