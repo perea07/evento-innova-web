@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --azul-nocturno: #0B1226;
+  --cian-electrico: #00E5FF;
+  --magenta-suave: #FF4D8B;
+}
+
+body { background: var(--azul-nocturno); color: white; }
+
+/* utility for card backgrounds */
+.card-bg { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); }
