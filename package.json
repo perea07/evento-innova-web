@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "commonjs",
-  "homepage": "https://github.com/yeisonestivenperea/evento-innova-frontend",
+  "homepage": "https://perea07.github.io/evento-innova-web/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
