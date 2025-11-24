@@ -16,7 +16,7 @@ export default function Agenda() {
   useEffect(() => {
     async function loadAgenda() {
       try {
-        const res = await fetch("http://localhost:4000/agenda");
+        const res = await fetch("https://evento-innova-api.onrender.com/agenda");
         if (!res.ok) throw new Error("Error al cargar la agenda");
 
         const data = await res.json();

@@ -1,8 +1,27 @@
-import React from 'react'
-import { speakers } from '../data/speakers'
+import React, { useEffect, useState } from 'react'
 import Card from '../components/ui/Card'
 
-export default function Ponentes(){
+export default function Ponentes() {
+  const [speakers, setSpeakers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://evento-innova-api.onrender.com/speakers")
+      .then(res => res.json())
+      .then(data => {
+        setSpeakers(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Error cargando ponentes:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <p className="text-center text-white">Cargando ponentes...</p>;
+  }
+
   return (
     <section className="max-w-6xl mx-auto">
       <h2 className="text-2xl font-bold mb-6">Ponentes</h2>
